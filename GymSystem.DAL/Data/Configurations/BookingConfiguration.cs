@@ -16,9 +16,10 @@ namespace GymSystem.DAL.Data.Configurations
         {
             builder.Ignore(x => x.Id);
             builder.Property(x => x.CreatedAt).HasColumnName("BookingDate").HasDefaultValueSql("GETDATE()");
-            builder.HasKey( x => new
+            builder.HasKey(x => new
             {
-                x.MemberId,x.SessionId
+                x.MemberId,
+                x.SessionId
             });
         }
     }

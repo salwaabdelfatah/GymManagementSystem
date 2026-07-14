@@ -21,7 +21,7 @@ namespace GymSystem.DAL.Data.Configurations
             {
                 tb.HasCheckConstraint(
                       "EmailCheck",
-                      "Email Like '%_@_%._%'" );
+                      "Email Like '%_@_%._%'");
                 tb.HasCheckConstraint(
                     "PhoneCheck",
                     "Phone Like '010%' or Phone Like '011%' or Phone Like '012%' or Phone Like '015%' ");
@@ -32,7 +32,7 @@ namespace GymSystem.DAL.Data.Configurations
                 address.Property(x => x.City).HasColumnType("varchar").HasMaxLength(30);
                 address.Property(x => x.Street).HasColumnType("varchar").HasMaxLength(30);
             });
-          
+
         }
     }
 }

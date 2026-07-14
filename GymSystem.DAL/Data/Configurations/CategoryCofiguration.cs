@@ -16,7 +16,7 @@ namespace GymSystem.DAL.Data.Configurations
                 HasMaxLength(20);
             builder.Property(x => x.CreatedAt).HasDefaultValueSql("GETDATE()");
             builder.HasData(
-                new Category { Id = 1, CategoryName = "Weight Loss"}
+                new Category { Id = 1, CategoryName = "Weight Loss" }
                 , new Category { Id = 2, CategoryName = "Cardio" }
                 , new Category { Id = 3, CategoryName = "Yoga" });
 
