@@ -1,0 +1,63 @@
+﻿@model GymSystem.BLL.ViewModels.PlanViewModels.CreatePlanViewModel
+
+<div class="container mt-5">
+
+    <h2 class="text-primary-color mb-4">
+        Add New Plan
+    </h2>
+
+
+    <form asp-action="Create" method="post">
+
+        <div class="mb-3">
+            <label class="form-label">
+                Plan Name
+            </label>
+
+            <input asp-for="Name" class="form-control" />
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Price
+            </label>
+
+            <input asp-for="Price" class="form-control" />
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Duration Days
+            </label>
+
+            <input asp-for="DurationDays" class="form-control" />
+
+        </div>
+
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Description
+            </label>
+
+            <textarea asp-for="Description"
+                      class="form-control"></textarea>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">
+            Save Plan
+        </button>
+
+
+    </form>
+
+</div>
