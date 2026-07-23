@@ -13,9 +13,9 @@ namespace GymManagement.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(CancellationToken cancellationToken)
         {
-            return View();
+            return View(cancellationToken);
         }
 
         public IActionResult Privacy()
